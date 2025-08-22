@@ -7,11 +7,22 @@
     <style>
         *{
             font-size: 16px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+            padding: 0;
+            margin: 0; 
+        }
+        html{
+            /*border: 0.2rem solid aqua;*/
+        }
+        body{
+            /*border: 0.2rem solid rgb(125, 255, 125);*/
+            display: flex;
+            flex-direction: column;
+            height: 100vh;   
         }
         header{
             display: flex;
-            border: 0.2rem solid red;
+            /*border: 0.2rem solid red;*/
             background-color: rgb(63, 56, 56);
             padding: 0.6rem;
             align-items: center;
@@ -21,7 +32,7 @@
             align-items: center;
             justify-content: center;
             align-content: center;
-            border: 0.2rem solid blue;
+            /*border: 0.2rem solid aliceblue;*/
             border-radius: 100%;
             width: 3rem;
             height: 3rem;
@@ -36,6 +47,39 @@
             font-weight: bold;
             color: rgb(211, 210, 210);
         }
+        section{
+            display: flex;
+            /*border: 0.2rem solid green;*/
+            flex: 1;
+        }
+        nav{
+            /*border: 0.2rem solid plum;*/
+            width: 15rem;
+            background-color: #eee;
+        }
+        main{
+            /*border: 0.2rem solid rgb(40, 214, 69);*/
+            flex: 1;
+            padding: 1rem;
+        }
+        .cartao{
+            border: 0.2rem solid rgb(190, 189, 189);
+            width: 15rem;
+            height: 20rem;
+            padding: 0.7rem; 
+            box-shadow: 0.5rem 0.5rem 0.3rem 0.01rem #eee;
+        }
+        .produto{
+            width: 15rem;
+
+        }
+        footer{
+            /*border: 0.2rem solid yellow;*/
+            background-color: rgb(63, 56, 56);
+            padding: 0.6rem;
+            height: 3rem;
+        }
+
     </style>
 </head>
 <body>
@@ -43,5 +87,15 @@
         <div id="logo">W</div>
         <h1 id="titulo">Meu site</h1>
     </header>
+    <section>
+        <nav>Menu lateral</nav>
+        <main>
+            <div class="cartao">
+                <img class="produto" src="assets/produto.png" alt="sorvetes">
+                meu cartao
+            </div>
+        </main>
+    </section>
+    <footer>&copy; 2025 Meu site 👌</footer>
 </body>
 </html>
